@@ -1,0 +1,42 @@
+{
+    "education": [
+        {
+            "institution": "Falkenbergs Gymnaesium",
+            "qualification": "Barn & Fritid, inriktning Fritid"
+        },
+        {
+            "institution": "Campus Varberg",
+            "qualification": ".NET System Developer"
+        }
+    ],
+    "work_experience": [
+        {
+            "employer": "Falkenbergs Kommun",
+            "duration": "2018 - Present",
+            "position": "Groundsman/Facility Manager",
+            "responsibilities": [
+                "Overseeing top-tier grass maintenance for a professional football team",
+                "Managing ice care at Falkenbergs Icehall",
+                "Organizing events and maintaining security and irrigation systems",
+                "Managing customer relationships and performing various operational tasks such as tree cutting and tractor operation"
+            ]
+        },
+        {
+            "employer": "Summer Employment and Internships",
+            "duration": "Various",
+            "position": "Roles at preschools, schools, and a bath and exercise facility",
+            "responsibilities": [
+                "Developed essential skills in communication, organization, and teamwork"
+            ]
+        }
+    ],
+    "courses": [
+        "Grass Maintenance Part1",
+        "Grass Maintenance Part2",
+        "Ice Care Course",
+        "Icedriver Qualification",
+        "Clearing Saw Qualification",
+        "Chain Saw Qualification",
+        "Yearly Cardiopulmonary Resuscitation"
+    ]
+}

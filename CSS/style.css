@@ -1,0 +1,542 @@
+:focus {
+    outline: 2px solid blue; 
+}
+
+
+/* Header*/
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+
+header {
+    background-color: #333;
+    color: rgb(231, 223, 223); 
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+header p {
+    font-size: 40px;
+}
+
+.portrait {
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 50px;
+    background-color: inherit; 
+}
+
+.portrait img {
+    border-radius: 20px; 
+    width: 250px;
+}
+
+
+/*Section*/
+section {
+    padding: 20px; 
+    background-color: rgb(231, 223, 223); 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 20px;
+    margin-top: 40px; 
+}
+
+/*Body*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; 
+    
+}
+
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.education,
+.experience {
+    margin-bottom: 20px;
+}
+
+.education h2,
+.experience h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 10px 10px 0;
+}
+
+.imagebot img {
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 450px;
+    height: auto;
+}
+
+/*About*/
+.post {
+    margin-bottom: 100px;
+}
+
+.post header.major {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.post header.major h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.post header.major p {
+    font-size: 18px;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*NAV*/
+#nav {
+    display: flex;
+    background: rgb(231, 223, 223);
+    height: 4rem;
+    line-height: 2.5rem;
+    position: relative; 
+    top: 35px; 
+    margin: 0 auto; 
+    
+    overflow: hidden;
+    padding: 0 0.1rem 0 0;
+    width: fit-content;
+    max-width: 72rem;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+#nav a {
+    color: #333; 
+    border-bottom-color: rgba(94, 93, 92, 0.6); 
+}
+
+#nav a:hover {
+    border-bottom-color: transparent;
+    color: #cac0b4; 
+}
+
+#nav ul.links {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-transform: uppercase; 
+}
+
+#nav ul.links li {
+    display: block;
+    padding-left: 0;
+    border-radius: 8px;
+}
+
+#nav ul.links li a {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: block;
+    font-size: 0.8rem;
+    outline: none;
+    padding: 0 2rem;
+}
+
+#nav ul.links li a:hover {
+    color: #a3a1a1;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+#nav ul.links li.active {
+    background-color: #a3a1a1; 
+}
+
+#nav ul.links li.active a {
+    color: #333; 
+}
+
+#nav ul.links li.active a:hover {
+    color: #333;
+}
+
+/*Projekt*/
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.posts article header {
+    margin-bottom: 20px;
+}
+
+.posts article h2 a {
+    color: rgb(255, 145, 0); 
+    text-decoration: none; 
+}
+
+.posts article .actions.special li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.posts article .actions.special li:last-child {
+    margin-right: 0;
+}
+
+.posts article .actions.special li a.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.posts article .actions.special li a.button:hover {
+    background-color: #555;
+}
+
+/*Featured Post*/
+.post.featured {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 40px;
+}
+
+.post.featured .major {
+    margin-bottom: 20px; 
+}
+
+.post.featured h2 {
+    font-size: 28px; 
+    margin-bottom: 10px; 
+}
+
+.post.featured p {
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #444; 
+}
+
+.post.featured .actions.special {
+    margin-top: 20px; 
+}
+
+/*Regular Posts*/
+.posts article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 40px;
+}
+
+.posts article header {
+    margin-bottom: 20px; 
+}
+
+.posts article h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.posts article p {
+    font-size: 16px; 
+    line-height: 1.6;
+    color: #444; 
+}
+
+.posts article .actions.special {
+    margin-top: 20px; 
+}
+
+/*Bilder i Projekt*/
+.post {
+    position: relative;
+}
+
+.post .image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.post .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post header {
+    position: relative;
+    z-index: 1;
+}
+
+.post .date {
+    font-size: 18px; 
+    color: #666; 
+    margin-bottom: 1px;
+}
+
+.post h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/*Modal pop up*/
+.modal-toggle {
+    display: none;
+}
+
+/*Styling för modalen*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: rgb(231, 223, 223); 
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*Styla stäng-knappen*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Visa modalen när checkboxen är markerad*/
+.modal-toggle:checked + .modal {
+    display: block;
+}
+
+/*Styling för knapparna*/
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/*Lägg till en box runt knappar*/
+.button, .close {
+    border: 1px solid #333;
+    box-sizing: border-box; 
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* tilmall för utskrift*/
+@media print {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12pt;
+        color: black;
+        background-color: white;
+    }
+
+}
+
+/*For screens smaller than 768px (typical mobile phones)*/
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px; 
+    }
+
+    header h1 {
+        font-size: 40px; 
+    }
+
+    header p {
+        font-size: 24px;
+    }
+
+    .portrait img {
+        width: 150px;
+    }
+
+    section {
+        padding: 10px;
+        max-width: 90%; 
+    }
+
+    .imagebot img {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    .modal-content {
+        width: 90%; 
+    }
+}
+
+/*For screens larger than 768px (typical tablets and desktops)*/
+@media screen and (min-width: 769px) {
+    header {
+        padding: 20px; 
+    }
+
+    header h1 {
+        font-size: 70px; 
+    }
+
+    header p {
+        font-size: 40px;
+    }
+
+    .portrait img {
+        width: 250px;
+    }
+
+    section {
+        max-width: 700px; 
+    }
+
+    .imagebot img {
+        width: 450px; 
+        margin-left: 25px; 
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+.content {
+    margin-bottom: 100px; 
+}
+
+#main {
+    margin-bottom: 100px;
+}
+
+.work_experience_section {
+    margin-bottom: 0; 
+}
+
+.education_section {
+    margin-bottom: 0; 
+}
+
+.courses_section {
+    margin-bottom: 0; 
+}
+
+
+
+#message {
+    display: none; 
+    position: fixed; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    padding: 20px; 
+    border: 2px solid black; 
+    z-index: 1000; 
+}
+
+.close-message {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+

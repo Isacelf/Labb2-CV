@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Isac CV</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div>
+                <h1>Isac Elfstrand</h1>
+                <p>System Developer</p>
+            </div>
+            <div class="portrait">
+                <img src="Images/porträtt.png" alt="self portrait" id="self-portrait" />
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">General</a></li>
+            <li><a href="PersonligtBrev.html">About</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li class="active"><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Text.html">LoremIpsum</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <section class="projects">
+            <img src="Images/portfolio banner.png" alt="Banner Image" style="max-width: 100%; height: auto;">
+
+            <article class="project">
+                <h2>Bankomaten</h2>
+                <div class="image-wrapper">
+                    <div class="image-wrapper">
+                        <a href="https://github.com/Isacelf/ATM" class="image fit"><img src="Images/bank.jpg" alt="" style="width: 100%; height: auto;"></a>
+                    </div>
+                                    <span class="date">October 15, 2023</span>
+                <p>Final project in the first course. Non-OOP.</p>
+                <ul class="actions special">
+                    <li><label for="modal-toggle-ATM" class="button">More Information</label></li>
+                    <li><a href="https://github.com/Isacelf/ATM" class="button" target="_blank">View Project on GitHub</a></li>
+                </ul>
+            </article>
+            <article class="project">
+                <h2>Numbers Game</h2>
+                <div class="image-wrapper">
+                    <a href="https://github.com/Isacelf/NumbersGame" class="image fit"><img src="Images/nummer.jpg" alt="" style="width: 100%; height: auto;"></a>
+                <span class="date">September 24, 2023</span>
+                <p>First course project. Simple console game where you guess a number between 1-20.</p>
+                <ul class="actions special">
+                    <li><label for="modal-toggle-numbersgame" class="button">More Information</label></li>
+                    <li><a href="https://github.com/Isacelf/NumbersGame" class="button" target="_blank">View Project on GitHub</a></li>
+                </ul>
+            </article>
+            <article class="project">
+                <h2>Database Project</h2>
+                <div class="image-wrapper">
+                    <a href="https://github.com/Isacelf/Labb3SQL" class="image fit"><img src="Images/database.jpg" alt="" style="width: 100%; height: auto;"></a>
+                <span class="date">Febuary 11, 2024</span>
+                <p>Database course project: Built a complex system with databases and it has various functions. Heres the C# part:</p>
+                <ul class="actions special">
+                    <li><label for="modal-toggle-DBProject" class="button">More Information</label></li>
+                    <li><a href="https://github.com/Isacelf/Labb3SQL" class="button" target="_blank">View Project on GitHub</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 - All rights reserved</p>
+        </div>
+    </footer>
+    <input type="checkbox" id="modal-toggle-ATM" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle-ATM" class="close">&times;</label>
+            <h2>More Information about the Bankomaten Project</h2>
+            <p>This is a simple console application for an ATM. The program manages five different users, their PIN codes, and bank accounts with balances. Users can log in, view their accounts and balances, transfer money between accounts, withdraw money, and log out.</p> 
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-toggle-numbersgame" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle-numbersgame" class="close">&times;</label>
+            <h2>More Information about the Numbers Game Project</h2>
+            <p>The first course introduces students to the basics of programming through a series of simple console games. One of these games is a number guessing game where the player is prompted to guess a number between 1 and 20. By interacting with the game, students gain practical experience using fundamental programming concepts such as variables, conditional statements, and user input. This assignment aims to build a solid foundation for understanding more complex concepts and algorithms that will come later in the course. By making the lessons interactive and fun, students' interest and engagement in the subject are stimulated, which is crucial for their progress and learning.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-toggle-DBProject" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle-DBProject" class="close">&times;</label>
+            <h2>More Information about Database Project</h2>
+            <p>In the Database Development and Administration course the final project involves developing a console-based application for a fictional school, implementing various functionalities requested by the school administration. This includes managing personnel information, student records, course data, and salary calculations for different departments. The application utilizes both SQL queries in SQL Server Management Studio (SSMS) and Entity Framework (EF) in Visual Studio to interact with the database. The goal is to create a user-friendly and stable application that efficiently handles the school's data management needs.</p>
+        </div>
+    </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Yay!!! You found one of the two Easter-Eggs, well done!! Lets see if you can find the second aswell...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="message">Yay!!! You found one of the two Easter-Eggs, well done!! Lets see if you can find the second aswell...
+            <span class="close-message">&times;</span> 
+        </div>    
+        <script src="cv.js"></script>
+
+
+</body>
+</html>
