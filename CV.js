@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () { // Hämta dokument och data från JSON filerna
-    fetch('cv_data.json')
+    fetch('CV_Data.json')
         .then(response => response.json())
         .then(data => {
             const { education, work_experience, courses } = data; 
